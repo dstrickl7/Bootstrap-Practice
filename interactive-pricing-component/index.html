@@ -33,14 +33,31 @@
     </div>
     <!-- Card Component -->
     <div class="card d-flex align-items-center">
-      <div class="card-body">
+      <div class="card-body w-100">
         <!-- Upper Card -->
-        <p class="card-title">Pageviews</p>
+        <p class="card-title">
+          <span id="page-views"></span> Pageviews
+        </p>
         <!-- Slider -->
-        <p class="card-text"> $ /month</p>
-        <!-- Toggle -->
-        <p class="card-text">Monthly Billing</p>
-        <p class="card-text">Yearly Billing 25% discount</p>
+        <div class="slider-container">
+          <p class="card-text"> $ /month</p>
+          <input type="range" id="views" value="10000" min="10000" max="1000000" step="10000">
+          <label for="views" type="hidden">Pageviews</label>
+        </div>
+
+        <!-- Toggle/Switch -->
+        <span class="d-flex">
+          <span>Monthly Billing</span>
+          <div class="form-check form-switch">
+
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <span>Yearly Billing 25% discount</span>
+          </div>
+        </span>
+
+        </span>
+
+
 
         <!-- Lower Card -->
         <ul class="list-unstyled">
@@ -57,7 +74,7 @@
 
     </div>
   </div>
-
+  <script src="scripts.js"></script>
 </body>
 
 </html>
