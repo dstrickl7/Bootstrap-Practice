@@ -1,3 +1,27 @@
+@use "variables";
+
 body {
   font-size: 15px;
+  font-family: variables.$manrope;
+  font-weight: 600;
+  color: variables.$gBlue;
+  background-color: variables.$vpaleBlue;
+}
+
+.title {
+  color: variables.$dBlue;
+  font-weight: 800;
+}
+.card {
+  width: 90%;
+}
+
+li {
+  &:before {
+    content: url("images/icon-check.svg");
+  }
+}
+
+.btn {
+  background-color: variables.$dBlue;
 }

@@ -1,5 +1,26 @@
 body {
   font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  color: #858fad;
+  background-color: #fafbff;
+}
+
+.title {
+  color: #293356;
+  font-weight: 800;
+}
+
+.card {
+  width: 90%;
+}
+
+li:before {
+  content: url("images/icon-check.svg");
+}
+
+.btn {
+  background-color: #293356;
 }
 
 /*# sourceMappingURL=styles.css.map */
