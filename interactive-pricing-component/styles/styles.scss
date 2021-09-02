@@ -8,6 +8,15 @@ body {
   background-color: variables.$vpaleBlue;
 }
 
+.header {
+  background: center/contain no-repeat url(images/pattern-circles.svg);
+}
+
+.header-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .title {
   color: variables.$dBlue;
   font-weight: 800;
