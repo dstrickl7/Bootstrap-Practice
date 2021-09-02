@@ -15,6 +15,57 @@ body {
   width: 90%;
 }
 
+.slider {
+  -webkit-appearance: none;
+  margin-bottom: 1.5rem;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+  background: #a5f3eb;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.slider::-moz-range-track {
+  background: #a5f3eb;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  background: center no-repeat url(images/icon-slider.svg);
+  background-size: 55%;
+  background-color: #10d5c2;
+  border-radius: 50%;
+  margin-top: -0.6rem;
+  box-shadow: 0 0.35rem 0.35rem #a5f3eb;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  background: center no-repeat url(images/icon-slider.svg);
+  background-size: 55%;
+  background-color: #10d5c2;
+  border-radius: 50%;
+  margin-top: -0.6rem;
+  border: none;
+}
+
+.switch {
+  height: 1.5rem;
+  width: 3rem;
+  background-color: #cdd7ee;
+}
+
 li:before {
   content: url("images/icon-check.svg");
 }
