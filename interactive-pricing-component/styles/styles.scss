@@ -81,10 +81,18 @@ body {
   box-shadow: 0 0.5rem 0.5rem variables.$softCyan;
 }
 
+.price-number {
+  color: variables.$dBlue;
+}
+
 .switch {
-  //   height: 1.5rem;
-  //   width: 3rem;
   background-color: variables.$lgBlue2;
+}
+
+.discount {
+  background-color: variables.$lgred;
+  color: variables.$lred;
+  border-radius: 1rem;
 }
 
 li {

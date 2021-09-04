@@ -79,8 +79,18 @@ body {
   box-shadow: 0 0.5rem 0.5rem #a5f3eb;
 }
 
+.price-number {
+  color: #293356;
+}
+
 .switch {
   background-color: #cdd7ee;
+}
+
+.discount {
+  background-color: #feece7;
+  color: #ff8c66;
+  border-radius: 1rem;
 }
 
 li:before {

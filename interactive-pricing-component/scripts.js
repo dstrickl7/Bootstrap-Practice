@@ -1,19 +1,22 @@
 let views = document.getElementById("views");
 let pageViews = document.getElementById("page-views");
 let price = document.getElementById("price");
+let isChecked = document.getElementById("flexSwitchCheckDefault");
+let x = 1; //Used to calculate pricing discount
+let discount = document.getElementById("showDiscount");
 
 // Display page views
 pageViews.innerText = views.value + "k";
+price.innerText = "$" + 8 * x + ".00";
 
 views.addEventListener("change", () => {
-  console.log(views.value);
   setViews();
   setPrice();
 });
 
 const setViews = () => {
   if (views.value !== pageViews.innerText) {
-    pageViews.innerText = views.value + "k";
+    pageViews.innerText = views.value + "K";
   }
   if (views.value == 1000) {
     pageViews.innerText = 1 + "M";
@@ -21,16 +24,43 @@ const setViews = () => {
 };
 
 //Update pricing based on views
+
 const setPrice = () => {
   if (views.value <= 10) {
-    price.innerText = "$8";
+    price.innerText = "$" + 8 * x + ".00";
   } else if (views.value >= 50 && views.value < 100) {
-    price.innerText = "$12";
+    price.innerText = "$" + 12 * x + ".00";
   } else if (views.value >= 100 && views.value < 500) {
-    price.innerText = "$16";
+    price.innerText = "$" + 16 * x + ".00";
   } else if (views.value >= 500 && views.value < 1000) {
-    price.innerText = "$24";
+    price.innerText = "$" + 24 * x + ".00";
   } else if (views.value == 1000) {
-    price.innerText = "$36";
+    price.innerText = "$" + 36 * x + ".00";
   }
 };
+
+// Check if yearly billing is selected, then apply discount
+
+isChecked.addEventListener("change", () => {
+  if (isChecked.checked == true) {
+    x = 0.75;
+  } else {
+    x = 1;
+  }
+});
+
+// Determining whether to display -25% or 25% discount
+let showDiscount = () => {
+  if (window.innerWidth < 600) {
+    discount.innerText = "-25";
+  } else {
+    discount.innerText = "25% discount";
+  }
+};
+
+showDiscount();
+window.addEventListener("change", showDiscount());
+
+//Issues
+// Price not updating immediately after switch flipped
+// showDiscount not running if screensize changes
