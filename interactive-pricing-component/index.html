@@ -42,9 +42,13 @@
         <!-- Slider -->
         <div class="slider-container">
 
-          <input type="range" id="views" value="10" min="10" max="100" step="5" class="slider">
+          <input type="range" id="views" value="10" min="10" max="1000" step="5" class="slider">
           <label for="views" type="hidden">Pageviews</label>
-          <p class="card-text text-center"> $ /month</p>
+          <span class="price-container">
+            <p class="card-text text-center" id="price"></p>
+            <p>/month</p>
+          </span>
+
         </div>
 
         <!-- Toggle/Switch -->
