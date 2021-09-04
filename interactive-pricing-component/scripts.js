@@ -52,7 +52,7 @@ isChecked.addEventListener("change", () => {
 // Determining whether to display -25% or 25% discount
 let showDiscount = () => {
   if (window.innerWidth < 600) {
-    discount.innerText = "-25";
+    discount.innerText = "-25%";
   } else {
     discount.innerText = "25% discount";
   }

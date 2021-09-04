@@ -33,51 +33,48 @@
 
     </div>
     <!-- Card Component -->
-    <div class="card d-flex align-items-center">
+    <div class="card d-flex align-items-center mb-5 border-0 rounded rounded-3 shadow-sm">
       <div class=" container d-flex flex-column align-items-center card-body w-100">
         <!-- Upper Card -->
-        <p class="card-title">
-          <span id="page-views"></span> Pageviews
-        </p>
-        <!-- Slider -->
-        <div class="slider-container">
-
-          <input type="range" id="views" value="10" min="10" max="1000" step="5" class="slider">
-          <label for="views" type="hidden">Pageviews</label>
-
-          <!-- Price display -->
-          <p class="card-description text-center">
-            <span id="price" class="price-number fs-1 pe-1"></span>
-            /month
+        <div class="upper-card d-flex flex-column align-items-center w-100">
+          <p class="card-title p-3">
+            <span id="page-views"></span> Pageviews
           </p>
+          <!-- Slider -->
+          <div class="slider-container w-100">
 
+            <input type="range" id="views" value="10" min="10" max="1000" step="5" class="slider w-100">
+            <label for="views" class="sr-only">Pageviews</label>
 
+            <!-- Price display -->
+            <p class="card-description text-center">
+              <span id="price" class="price-number fs-1 pe-1"></span>
+              /month
+            </p>
+          </div>
+
+          <!-- Toggle/Switch -->
+          <span class="d-flex justify-content-center switch-span py-3 w-100">
+            <span class="me-2">Monthly Billing</span>
+            <div class="form-check form-switch">
+
+              <input class="form-check-input w-25 switch" type="checkbox" id="flexSwitchCheckDefault">
+              <span>Yearly Billing <span class="discount p-1" id="showDiscount"></span></span>
+            </div>
+          </span>
         </div>
 
-        <!-- Toggle/Switch -->
-        <span class="d-flex">
-          <span>Monthly Billing</span>
-          <div class="form-check form-switch">
-
-            <input class="form-check-input w-25 switch" type="checkbox" id="flexSwitchCheckDefault">
-            <span>Yearly Billing <span class="discount" id="showDiscount"></span></span>
-          </div>
-        </span>
-
-        </span>
-
-
-
         <!-- Lower Card -->
-        <ul class="list-unstyled text-center">
-          <li>Unlimited websites</li>
-          <li>100% data ownership</li>
-          <li>Email reports</li>
-        </ul>
+        <div class="lower-card d-flex flex-column align-items-center w-100 my-4">
+          <ul class="list-unstyled text-center mb-4">
+            <li>Unlimited websites</li>
+            <li class="py-2">100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
 
+          <button class="btn rounded-pill w-50">Start my trial</button>
+        </div>
 
-
-        <button class="btn rounded-pill w-50">Start my trial</button>
       </div>
 
 

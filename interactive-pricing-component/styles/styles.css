@@ -33,6 +33,10 @@ body {
   width: 90%;
 }
 
+.upper-card {
+  border-bottom: solid #eaeefb 0.15rem;
+}
+
 .slider {
   -webkit-appearance: none;
   margin-bottom: 1.5rem;
@@ -87,6 +91,11 @@ body {
   background-color: #cdd7ee;
 }
 
+.switch-span {
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
 .discount {
   background-color: #feece7;
   color: #ff8c66;
@@ -103,6 +112,15 @@ li:before {
   color: #cdd7ee;
   font-size: 0.75rem;
   font-weight: 800;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

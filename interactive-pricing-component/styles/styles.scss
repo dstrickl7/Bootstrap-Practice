@@ -34,6 +34,10 @@ body {
   width: 90%;
 }
 
+.upper-card {
+  border-bottom: solid variables.$lgBlue1 0.15rem;
+}
+
 // Slider styling
 .slider {
   -webkit-appearance: none;
@@ -89,6 +93,11 @@ body {
   background-color: variables.$lgBlue2;
 }
 
+.switch-span {
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
 .discount {
   background-color: variables.$lgred;
   color: variables.$lred;
@@ -107,4 +116,14 @@ li {
   color: variables.$lgBlue2;
   font-size: 0.75rem;
   font-weight: 800;
+}
+
+// Hides labels for everything except screen readers
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
