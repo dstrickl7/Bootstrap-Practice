@@ -23,6 +23,7 @@
 </head>
 
 <body>
+  <div class="background"></div>
   <div class="container d-flex flex-column align-items-center">
     <!-- Header -->
     <div class="d-flex flex-column align-items-center header mt-5 mb-5">
@@ -40,9 +41,10 @@
         </p>
         <!-- Slider -->
         <div class="slider-container">
-          <p class="card-text"> $ /month</p>
-          <input type="range" id="views" value="10000" min="10000" max="1000000" step="10000" class="slider">
+
+          <input type="range" id="views" value="10" min="10" max="100" step="5" class="slider">
           <label for="views" type="hidden">Pageviews</label>
+          <p class="card-text text-center"> $ /month</p>
         </div>
 
         <!-- Toggle/Switch -->
@@ -50,7 +52,7 @@
           <span>Monthly Billing</span>
           <div class="form-check form-switch">
 
-            <input class="form-check-input switch" type="checkbox" id="flexSwitchCheckDefault">
+            <input class="form-check-input w-25 switch" type="checkbox" id="flexSwitchCheckDefault">
             <span>Yearly Billing 25% discount</span>
           </div>
         </span>
@@ -60,7 +62,7 @@
 
 
         <!-- Lower Card -->
-        <ul class="list-unstyled">
+        <ul class="list-unstyled text-center">
           <li>Unlimited websites</li>
           <li>100% data ownership</li>
           <li>Email reports</li>
@@ -68,7 +70,7 @@
 
 
 
-        <button class="btn rounded-pill">Start my trial</button>
+        <button class="btn rounded-pill w-50">Start my trial</button>
       </div>
 
 

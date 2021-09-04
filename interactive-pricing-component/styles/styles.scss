@@ -8,6 +8,15 @@ body {
   background-color: variables.$vpaleBlue;
 }
 
+.background {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  background-color: variables.$lgBlue1;
+  z-index: -1;
+  border-radius: 0 0 0 5rem;
+}
+
 .header {
   background: center/contain no-repeat url(images/pattern-circles.svg);
 }
@@ -56,7 +65,7 @@ body {
   background-color: variables.$strongCyan;
   border-radius: 50%;
   margin-top: -0.6rem;
-  box-shadow: 0 0.35rem 0.35rem variables.$softCyan;
+  box-shadow: 0 0.5rem 0.5rem variables.$softCyan;
 }
 
 .slider::-moz-range-thumb {
@@ -69,17 +78,19 @@ body {
   border-radius: 50%;
   margin-top: -0.6rem;
   border: none;
+  box-shadow: 0 0.5rem 0.5rem variables.$softCyan;
 }
 
 .switch {
-  height: 1.5rem;
-  width: 3rem;
+  //   height: 1.5rem;
+  //   width: 3rem;
   background-color: variables.$lgBlue2;
 }
 
 li {
   &:before {
     content: url("images/icon-check.svg");
+    padding-right: 1rem;
   }
 }
 
