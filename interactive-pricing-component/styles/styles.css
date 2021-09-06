@@ -136,4 +136,19 @@ li:before {
   overflow: hidden;
 }
 
+@media (min-width: 768px) {
+  .card {
+    width: 75%;
+  }
+
+  .card-title {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    width: 50%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

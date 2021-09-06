@@ -68,5 +68,4 @@ showDiscount();
 window.addEventListener("change", showDiscount());
 
 //Issues
-// Price not updating immediately after switch flipped
 // showDiscount not running if screensize changes

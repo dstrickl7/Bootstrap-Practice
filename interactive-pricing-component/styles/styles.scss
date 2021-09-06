@@ -142,3 +142,19 @@ li {
   height: 1px;
   overflow: hidden;
 }
+
+@media (min-width: 768px) {
+  .card {
+    width: 75%;
+  }
+
+  .card-title {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 50%;
+  }
+}
