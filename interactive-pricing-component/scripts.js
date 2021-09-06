@@ -6,8 +6,10 @@ let x = 1; //Used to calculate pricing discount
 let discount = document.getElementById("showDiscount");
 
 // Display page views
-pageViews.innerText = views.value + "k";
-price.innerText = "$" + 8 * x + ".00";
+const values = [10, 50, 100, 500, 1];
+
+pageViews.innerText = values[views.value] + "K";
+price.innerText = price.innerText = "$" + 16 * x + ".00";
 
 views.addEventListener("change", () => {
   setViews();
@@ -15,26 +17,26 @@ views.addEventListener("change", () => {
 });
 
 const setViews = () => {
-  if (views.value !== pageViews.innerText) {
-    pageViews.innerText = views.value + "K";
+  if (views.value < 4) {
+    pageViews.innerText = values[views.value] + "K";
   }
-  if (views.value == 1000) {
-    pageViews.innerText = 1 + "M";
+  if (views.value == 4) {
+    pageViews.innerText = values[views.value] + "M";
   }
 };
 
 //Update pricing based on views
 
 const setPrice = () => {
-  if (views.value <= 10) {
+  if (views.value == 0) {
     price.innerText = "$" + 8 * x + ".00";
-  } else if (views.value >= 50 && views.value < 100) {
+  } else if (views.value == 1) {
     price.innerText = "$" + 12 * x + ".00";
-  } else if (views.value >= 100 && views.value < 500) {
+  } else if (views.value == 2) {
     price.innerText = "$" + 16 * x + ".00";
-  } else if (views.value >= 500 && views.value < 1000) {
+  } else if (views.value == 3) {
     price.innerText = "$" + 24 * x + ".00";
-  } else if (views.value == 1000) {
+  } else if (views.value == 4) {
     price.innerText = "$" + 36 * x + ".00";
   }
 };
@@ -44,8 +46,12 @@ const setPrice = () => {
 isChecked.addEventListener("change", () => {
   if (isChecked.checked == true) {
     x = 0.75;
+    setViews();
+    setPrice();
   } else {
     x = 1;
+    setViews();
+    setPrice();
   }
 });
 

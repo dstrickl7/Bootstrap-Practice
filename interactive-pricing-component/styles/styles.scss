@@ -85,17 +85,32 @@ body {
   box-shadow: 0 0.5rem 0.5rem variables.$softCyan;
 }
 
+//End slider styling
+
 .price-number {
   color: variables.$dBlue;
 }
 
 .switch {
   background-color: variables.$lgBlue2;
+  border: none;
+  height: 1.25rem;
+  outline: none;
+}
+
+.switch:checked {
+  background-color: variables.$softCyan;
+  border: none;
 }
 
 .switch-span {
   font-size: 0.75rem;
   font-weight: 800;
+}
+
+.form-switch .form-check-input {
+  width: 2.5rem;
+  margin-right: 0.5rem;
 }
 
 .discount {
