@@ -3,14 +3,14 @@ body {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   color: #858fad;
-  background-color: #fafbff;
+  background-color: white;
 }
 
 .background {
   position: absolute;
   height: 50vh;
   width: 100%;
-  background-color: #eaeefb;
+  background-color: #fafbff;
   z-index: -1;
   border-radius: 0 0 0 5rem;
 }
@@ -47,13 +47,13 @@ body {
 }
 
 .slider::-webkit-slider-runnable-track {
-  background: #a5f3eb;
+  background-color: #cdd7ee;
   height: 0.5rem;
   border-radius: 1rem;
 }
 
 .slider::-moz-range-track {
-  background: #a5f3eb;
+  background-color: #cdd7ee;
   height: 0.5rem;
   border-radius: 1rem;
 }
@@ -81,6 +81,18 @@ body {
   margin-top: -0.6rem;
   border: none;
   box-shadow: 0 0.5rem 0.5rem #a5f3eb;
+}
+
+.slider::-ms-fill-lower {
+  background-color: #a5f3eb;
+}
+
+.slider::-ms-fill-upper {
+  background-color: #cdd7ee;
+}
+
+.slider::-moz-range-progress {
+  background-color: #a5f3eb;
 }
 
 .price-number {

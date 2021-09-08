@@ -5,14 +5,14 @@ body {
   font-family: variables.$manrope;
   font-weight: 600;
   color: variables.$gBlue;
-  background-color: variables.$vpaleBlue;
+  background-color: variables.$white;
 }
 
 .background {
   position: absolute;
   height: 50vh;
   width: 100%;
-  background-color: variables.$lgBlue1;
+  background-color: variables.$vpaleBlue;
   z-index: -1;
   border-radius: 0 0 0 5rem;
 }
@@ -49,13 +49,13 @@ body {
 }
 
 .slider::-webkit-slider-runnable-track {
-  background: variables.$softCyan;
+  background-color: variables.$lgBlue2;
   height: 0.5rem;
   border-radius: 1rem;
 }
 
 .slider::-moz-range-track {
-  background: variables.$softCyan;
+  background-color: variables.$lgBlue2;
   height: 0.5rem;
   border-radius: 1rem;
 }
@@ -83,6 +83,18 @@ body {
   margin-top: -0.6rem;
   border: none;
   box-shadow: 0 0.5rem 0.5rem variables.$softCyan;
+}
+
+.slider::-ms-fill-lower {
+  background-color: variables.$softCyan;
+}
+
+.slider::-ms-fill-upper {
+  background-color: variables.$lgBlue2;
+}
+
+.slider::-moz-range-progress {
+  background-color: variables.$softCyan;
 }
 
 //End slider styling
