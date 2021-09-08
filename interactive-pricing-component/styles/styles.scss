@@ -157,6 +157,9 @@ li {
 
   .slider {
     cursor: pointer;
+    &:active {
+      cursor: grabbing;
+    }
   }
 
   .switch {

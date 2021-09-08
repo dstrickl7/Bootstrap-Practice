@@ -150,6 +150,9 @@ li:before {
   .slider {
     cursor: pointer;
   }
+  .slider:active {
+    cursor: grabbing;
+  }
 
   .switch {
     cursor: pointer;
