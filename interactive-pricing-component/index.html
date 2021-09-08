@@ -36,25 +36,26 @@
     <div class="card d-flex align-items-center mb-5 border-0 rounded rounded-3 shadow-sm">
       <div class=" container d-flex flex-column align-items-center card-body w-100">
         <!-- Upper Card -->
-        <div class="upper-card d-flex flex-column align-items-center w-100 row">
-          <p class="card-title p-3 text-center  col-md-6">
+        <div class="upper-card d-flex flex-column flex-md-row align-items-center w-100 row">
+          <p class="card-title p-3 text-center text-md-start col-md-6">
             <span id="page-views"></span> Pageviews
           </p>
           <!-- Slider -->
-          <div class="slider-container w-100 col-12">
+          <div class="slider-container w-100 col col-12 order-3">
 
             <input type="range" id="views" value="2" min="0" max="4" step="1" class="slider w-100">
             <label for="views" class="sr-only">Pageviews</label>
-
-            <!-- Price display -->
-            <p class="card-description text-center col-md-6">
-              <span id="price" class="price-number fs-1 pe-1"></span>
-              /month
-            </p>
           </div>
 
+          <!-- Price display -->
+          <p class="card-description text-center col col-md-6 order-2">
+            <span id="price" class="price-number fs-1 pe-1"></span>
+            /month
+          </p>
+
+
           <!-- Toggle/Switch -->
-          <span class="d-flex justify-content-center switch-span text-sm-center py-3 px-0 w-100 row">
+          <span class="d-flex justify-content-center switch-span text-center py-3 px-0 w-100 row order-4">
             <span class="col-4 col-md-3 px-0 me-1">Monthly Billing</span>
             <div class="form-check form-switch col-1">
               <input class="form-check-input switch" type="checkbox" id="flexSwitchCheckDefault">
