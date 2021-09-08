@@ -85,6 +85,7 @@ body {
 
 .price-number {
   color: #293356;
+  font-weight: 800;
 }
 
 .switch {
@@ -144,6 +145,28 @@ li:before {
 @media (min-width: 992px) {
   .card {
     width: 50%;
+  }
+
+  .slider {
+    cursor: pointer;
+  }
+
+  .switch {
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    color: white;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    width: 45%;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    width: 35%;
   }
 }
 
