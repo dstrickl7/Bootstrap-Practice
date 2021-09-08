@@ -101,18 +101,18 @@ body {
 
 .switch-span {
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .form-switch .form-check-input {
   width: 2.5rem;
-  margin-right: 0.5rem;
 }
 
 .discount {
   background-color: #feece7;
   color: #ff8c66;
   border-radius: 1rem;
+  font-size: 0.75rem;
 }
 
 li:before {
@@ -139,10 +139,6 @@ li:before {
 @media (min-width: 768px) {
   .card {
     width: 75%;
-  }
-
-  .card-title {
-    align-items: flex-start;
   }
 }
 @media (min-width: 992px) {
