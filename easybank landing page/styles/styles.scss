@@ -1,0 +1,81 @@
+@use "bootstrap-5.0.2/scss/bootstrap-utilities.scss";
+@use "bootstrap-5.0.2/scss/bootstrap.scss";
+@use "myVariables.scss";
+
+body {
+  background-color: myVariables.$vlGray;
+  font-family: myVariables.$publicsans;
+  font-size: 18px;
+  color: myVariables.$gBlue;
+}
+
+.logo-toggle-container {
+  background-color: myVariables.$white;
+  height: 100%;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link {
+  color: myVariables.$dBlue;
+  font-weight: 700;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-list-container {
+  width: 80%;
+  margin-top: 2rem;
+  background-color: myVariables.$white;
+}
+
+.navbar-toggler-icon {
+  background: center / contain no-repeat url("./images/icon-hamburger.svg");
+}
+
+.navbar-toggler-icon.active {
+  background: center / contain no-repeat url("./images/icon-close.svg");
+  background-size: 1rem;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.overlay.active {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.btn {
+  background: linear-gradient(
+    90deg,
+    myVariables.$limeGreen,
+    myVariables.$bCyan 95%
+  );
+  color: myVariables.$white;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    a {
+      color: myVariables.$lgBlue;
+    }
+  }
+
+  .nav-btn {
+    display: block;
+  }
+}
