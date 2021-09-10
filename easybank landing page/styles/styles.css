@@ -15521,7 +15521,7 @@ h6 {
 }
 
 .hero {
-  background: center/contain no-repeat url("./images/image-mockups.png"), url("./images/bg-intro-mobile.svg");
+  background: center/contain no-repeat url("./images/image-mockups.png"), center/cover no-repeat url("./images/bg-intro-mobile.svg");
   height: 60vh;
 }
 
@@ -15598,8 +15598,12 @@ h6 {
 }
 
 .card-subtitle {
-  font-size: 0.75rem;
-  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  padding: 0.75rem 0;
+}
+
+.card-title {
+  font-size: 1.05rem;
 }
 
 .card-text {
@@ -15608,6 +15612,25 @@ h6 {
 
 .card-body {
   padding: 2rem 1rem;
+}
+
+footer {
+  background-color: #2d314d;
+  margin-top: 5rem;
+}
+
+.icon {
+  padding: 0.35rem;
+}
+
+.footer-link {
+  font-weight: 300;
+  color: white;
+}
+
+.footer-btn {
+  font-size: 0.65;
+  font-weight: 400;
 }
 
 @media (min-width: 992px) {
