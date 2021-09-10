@@ -94,12 +94,19 @@ h6 {
     myVariables.$bCyan 95%
   );
   color: myVariables.$white;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .why-container {
   .why-text {
     font-size: 0.9rem;
   }
+}
+
+// article-blog section
+.blog {
+  background-color: myVariables.$white;
 }
 
 // Cards
@@ -135,10 +142,10 @@ footer {
   color: myVariables.$white;
 }
 
-.footer-btn {
-  font-size: 0.65;
-  font-weight: 400;
-}
+// .footer-btn {
+//   font-size: 0.65rem;
+//   font-weight: 400;
+// }
 
 @media (min-width: 992px) {
   .navbar {

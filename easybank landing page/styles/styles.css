@@ -15591,10 +15591,16 @@ h6 {
 .btn {
   background: linear-gradient(90deg, #31d35c, #2bb7da 95%);
   color: white;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .why-container .why-text {
   font-size: 0.9rem;
+}
+
+.blog {
+  background-color: white;
 }
 
 .card-subtitle {
@@ -15626,11 +15632,6 @@ footer {
 .footer-link {
   font-weight: 300;
   color: white;
-}
-
-.footer-btn {
-  font-size: 0.65;
-  font-weight: 400;
 }
 
 @media (min-width: 992px) {
