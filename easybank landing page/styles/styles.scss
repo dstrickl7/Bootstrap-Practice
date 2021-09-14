@@ -3,10 +3,11 @@
 @use "myVariables.scss";
 
 body {
-  background-color: myVariables.$vlGray;
+  background-color: myVariables.$lgBlue;
   font-family: myVariables.$publicsans;
   font-size: 18px;
   color: myVariables.$gBlue;
+  overflow-x: hidden;
 }
 
 h1,
@@ -19,11 +20,7 @@ h6 {
 }
 
 .hero {
-  background: center / contain no-repeat url("./images/image-mockups.png"),
-    center / cover no-repeat url("./images/bg-intro-mobile.svg");
-  height: 60vh;
-  margin-left: 0;
-  margin-right: 0;
+  background: center / cover no-repeat url("./images/bg-intro-mobile.svg");
 }
 
 .hero-img {
@@ -57,6 +54,10 @@ h6 {
   margin-top: 2rem;
   background-color: myVariables.$white;
   border-radius: 0.5rem;
+  z-index: 10;
+  position: absolute;
+  left: 10%;
+  top: 85%;
 }
 
 .navbar-collapse.show {
@@ -87,7 +88,7 @@ h6 {
 }
 
 .hero-text-container {
-  background-color: myVariables.$white;
+  background-color: myVariables.$vlGray;
 }
 
 .hero-text {
@@ -114,12 +115,13 @@ h6 {
 
 // article-blog section
 .blog {
-  background-color: myVariables.$white;
+  background-color: myVariables.$vlGray;
 }
 
 // Cards
 .card {
   max-width: 95%;
+  padding: unset;
 }
 
 .card-img-top {
@@ -158,10 +160,13 @@ footer {
   color: myVariables.$white;
 }
 
-// .footer-btn {
-//   font-size: 0.65rem;
-//   font-weight: 400;
-// }
+@media (min-width: 768px) {
+  .card {
+    max-width: 45%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
 
 @media (min-width: 992px) {
   .desktop-nav {
@@ -185,8 +190,31 @@ footer {
   }
 
   .hero {
+    height: 75vh;
     display: flex;
-    background: right / contain no-repeat url("./images/image-mockups.png"),
-      right / contain no-repeat url("./images/bg-intro-desktop.svg");
+    background-image: url("./images/bg-intro-desktop.svg");
+    background-size: 130%;
+    background-position: left -50% top 80%;
+  }
+
+  .hero-img {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    right: -6.5%;
+  }
+
+  .hero-text-container {
+    background-color: unset;
+  }
+
+  header {
+    background-color: myVariables.$vlGray;
+  }
+
+  .card {
+    max-width: 23%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
