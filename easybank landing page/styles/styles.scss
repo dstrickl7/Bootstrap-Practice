@@ -22,6 +22,8 @@ h6 {
   background: center / contain no-repeat url("./images/image-mockups.png"),
     center / cover no-repeat url("./images/bg-intro-mobile.svg");
   height: 60vh;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .hero-img {
@@ -182,9 +184,5 @@ footer {
     display: flex;
     background: right / contain no-repeat url("./images/image-mockups.png"),
       right / contain no-repeat url("./images/bg-intro-desktop.svg");
-  }
-
-  .card {
-    // width: 25%;
   }
 }

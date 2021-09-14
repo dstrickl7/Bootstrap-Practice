@@ -15523,6 +15523,8 @@ h6 {
 .hero {
   background: center/contain no-repeat url("./images/image-mockups.png"), center/cover no-repeat url("./images/bg-intro-mobile.svg");
   height: 60vh;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .hero-img {
