@@ -1,12 +1,8 @@
-@use "bootstrap-5.0.2/scss/bootstrap-utilities.scss";
-@use "bootstrap-5.0.2/scss/bootstrap.scss";
-@use "myVariables.scss";
-
 body {
-  background-color: myVariables.$lgBlue;
-  font-family: myVariables.$publicsans;
+  background-color: #f3f4f6;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
-  color: myVariables.$gBlue;
+  color: #9698a6;
   overflow-x: hidden;
 }
 
@@ -16,11 +12,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: myVariables.$dBlue;
+  color: #2d314d;
 }
 
 .hero {
-  background: center / cover no-repeat url("./images/bg-intro-mobile.svg");
+  background: center/cover no-repeat url("./images/bg-intro-mobile.svg");
 }
 
 .hero-img {
@@ -28,7 +24,7 @@ h6 {
 }
 
 .logo-toggle-container {
-  background-color: myVariables.$white;
+  background-color: white;
   height: 100%;
 }
 
@@ -39,7 +35,7 @@ h6 {
 
 .navbar-nav .nav-link.active,
 .nav-link {
-  color: myVariables.$dBlue;
+  color: #2d314d;
   font-weight: 700;
 }
 
@@ -52,7 +48,7 @@ h6 {
 .nav-list-container.active {
   width: 80%;
   margin-top: 2rem;
-  background-color: myVariables.$white;
+  background-color: white;
   border-radius: 0.5rem;
   z-index: 10;
   position: absolute;
@@ -65,11 +61,11 @@ h6 {
 }
 
 .navbar-toggler-icon {
-  background: center / contain no-repeat url("./images/icon-hamburger.svg");
+  background: center/contain no-repeat url("./images/icon-hamburger.svg");
 }
 
 .navbar-toggler-icon.active {
-  background: center / contain no-repeat url("./images/icon-close.svg");
+  background: center/contain no-repeat url("./images/icon-close.svg");
   background-size: 1rem;
 }
 
@@ -88,7 +84,7 @@ h6 {
 }
 
 .hero-text-container {
-  background-color: myVariables.$vlGray;
+  background-color: #fafafa;
 }
 
 .hero-text {
@@ -97,28 +93,20 @@ h6 {
 }
 
 .btn {
-  background: linear-gradient(
-    90deg,
-    myVariables.$limeGreen,
-    myVariables.$bCyan 95%
-  );
-  color: myVariables.$white;
+  background: linear-gradient(90deg, #31d35c, #2bb7da 95%);
+  color: white;
   font-size: 0.75rem;
   font-weight: 400;
 }
 
-.why-container {
-  .why-text {
-    font-size: 0.9rem;
-  }
+.why-container .why-text {
+  font-size: 0.9rem;
 }
 
-// article-blog section
 .blog {
-  background-color: myVariables.$vlGray;
+  background-color: #fafafa;
 }
 
-// Cards
 .card {
   max-width: 95%;
   padding: unset;
@@ -145,9 +133,8 @@ h6 {
   padding: 2rem 1rem;
 }
 
-// Footer
 footer {
-  background-color: myVariables.$dBlue;
+  background-color: #2d314d;
   margin-top: 5rem;
 }
 
@@ -157,7 +144,7 @@ footer {
 
 .footer-link {
   font-weight: 300;
-  color: myVariables.$white;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -167,17 +154,15 @@ footer {
     margin-right: 0.5rem;
   }
 }
-
 @media (min-width: 992px) {
   .desktop-nav {
     width: 100%;
     height: 20%;
     display: flex;
   }
-  .navbar {
-    a {
-      color: myVariables.$lgBlue;
-    }
+
+  .navbar a {
+    color: #f3f4f6;
   }
 
   .nav-list-container {
@@ -209,7 +194,7 @@ footer {
   }
 
   header {
-    background-color: myVariables.$vlGray;
+    background-color: #fafafa;
   }
 
   .card {
