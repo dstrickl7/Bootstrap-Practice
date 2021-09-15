@@ -38,7 +38,8 @@ h6 {
 }
 
 .navbar-nav .nav-link.active,
-.nav-link {
+.nav-link,
+.navbar-text {
   color: myVariables.$dBlue;
   font-weight: 700;
 }
@@ -170,19 +171,50 @@ footer {
 
 @media (min-width: 992px) {
   .desktop-nav {
-    width: 100%;
+    width: 100vw;
     height: 20%;
-    display: flex;
+    background-color: myVariables.$white;
+    padding: 0 5rem;
   }
   .navbar {
     a {
-      color: myVariables.$lgBlue;
+      color: myVariables.$gBlue;
+      &:hover {
+        color: myVariables.$dBlue;
+      }
     }
+  }
+
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    height: 0.25rem;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0%;
+    background-color: myVariables.$bCyan;
+  }
+
+  .nav-link:hover:after {
+    width: 25%;
+    left: 0%;
+  }
+
+  .logo-toggle-container {
+    width: 30%;
   }
 
   .nav-list-container {
     border-radius: unset;
     padding: 1.25rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    padding: 0 0.75rem;
   }
 
   .nav-btn {
