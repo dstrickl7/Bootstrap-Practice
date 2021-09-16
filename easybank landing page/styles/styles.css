@@ -15673,12 +15673,11 @@ footer {
   margin-top: 5rem;
 }
 
-.icon {
+.icon-link {
   padding: 0.35rem;
 }
-.icon imghover {
+.icon-link imghover {
   cursor: pointer;
-  color: #31d35c;
 }
 
 .footer-link {
@@ -15790,6 +15789,63 @@ footer {
 
   .card-img-top {
     height: 15vw;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+    fill: #31d35c;
+  }
+}
+@media (min-width: 1800px) {
+  .navbar a {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+  }
+
+  .hero-text-container {
+    justify-content: center;
+  }
+  .hero-text-container h1 {
+    font-size: 5rem;
+  }
+  .hero-text-container p {
+    font-size: 1.5rem;
+  }
+
+  .hero-text,
+.card-text {
+    font-size: 1.5rem;
+  }
+
+  #about h2 {
+    font-size: 4rem;
+  }
+  #about h5 {
+    font-size: 1.75rem;
+  }
+  #about p {
+    font-size: 1.5rem;
+  }
+
+  .blog h3 {
+    font-size: 4rem;
+  }
+  .blog .card-subtitle {
+    font-size: 1.25rem;
+  }
+  .blog .card-title {
+    font-size: 2rem;
+  }
+
+  footer a {
+    font-size: 1.25rem;
+  }
+
+  .icon-link {
+    height: 1.5rem;
   }
 }
 
