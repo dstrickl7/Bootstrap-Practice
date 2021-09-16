@@ -171,10 +171,8 @@ footer {
 
 .icon-link {
   padding: 0.35rem;
-  img {
-    &hover {
-      cursor: pointer;
-    }
+  &hover {
+    cursor: pointer;
   }
 }
 
@@ -314,7 +312,6 @@ footer {
     font-size: 1.25rem;
   }
   .hero-text-container {
-    justify-content: center;
     h1 {
       font-size: 5rem;
     }
@@ -361,6 +358,5 @@ footer {
   }
 
   .icon-link {
-    height: 1.5rem;
   }
 }

@@ -15676,7 +15676,7 @@ footer {
 .icon-link {
   padding: 0.35rem;
 }
-.icon-link imghover {
+.icon-linkhover {
   cursor: pointer;
 }
 
@@ -15805,9 +15805,6 @@ footer {
     font-size: 1.25rem;
   }
 
-  .hero-text-container {
-    justify-content: center;
-  }
   .hero-text-container h1 {
     font-size: 5rem;
   }
@@ -15842,10 +15839,6 @@ footer {
 
   footer a {
     font-size: 1.25rem;
-  }
-
-  .icon-link {
-    height: 1.5rem;
   }
 }
 
