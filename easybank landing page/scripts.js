@@ -7,3 +7,12 @@ close.addEventListener("click", () => {
   overlay.classList.toggle("active");
   navlist.classList.toggle("active");
 });
+
+// Attempt to close navlist when a link is clicked
+let navlink = document.querySelectorAll("nav-link");
+
+navlink.forEach((link) =>
+  link.addEventListener("click", (x) => {
+    console.log(x.target);
+  })
+);
