@@ -58,14 +58,18 @@ I prefer to write my own CSS/SCSS for some things. It seems more efficient to ad
 ### Challenges
 - The navbar - Normally with CSS or SCSS, I have no issues with navbars, however I really struggled to get the navigation right here. The disconnected mobile navigation was tricky. When I found a solution for mobile, it made the desktop navbar look broken. I also had issues with the padding and positioning to the mobile navigation list. Currently it's added after the list opens causing the content to jump making the effect jarring.
 
+- Hero - on screens between 800-992px, the hero has a lot of white space on the right hand side. On portrait screens with larger widths, there is a lot of white space between the hero and navbar.
+
 Navbar still has a lot of issues:
-- On screens of 1024px, it looks very cluttered
-- Have not managed to fix the jumping when the mobile nav is opened
-- When mobile nav is closed, the navlist reverts to being attached to the navbar and closes
+- ~~On screens of 1024px, it looks very cluttered~~
+- Have not managed to fix the jumping when the mobile nav is opened/closed
+- ~~When mobile nav is closed, the navlist reverts to being attached to the navbar and closes~~
+- Haven't figured out how to smoothly transition between Bootstraps collapse and collapsing classes. This is what caused the previous issues with the mobile nav reattaching to the navbar.
 
 
 ### Continued development
 - Use the grid system for more complex layouts
+- Figure out how to work around Bootstrap's collapse and collapsing classes or how to adjust the collapse script
 - SVGs: styling, etc.
 
 
