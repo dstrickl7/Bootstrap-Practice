@@ -15718,6 +15718,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .hero {
+    align-items: center;
+  }
+
   .card {
     max-width: 45%;
     margin-left: 0.5rem;
@@ -15802,6 +15806,10 @@ footer {
     background-color: unset;
   }
 
+  .my-3 {
+    font-size: 1.25rem;
+  }
+
   header {
     background-color: #fafafa;
   }
@@ -15821,12 +15829,23 @@ footer {
     fill: #31d35c;
   }
 }
+@media (min-width: 1024px) {
+  .nav-btn {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-btn {
+    font-size: 0.9rem;
+  }
+}
 @media (min-width: 1800px) {
   .navbar a {
     font-size: 1.25rem;
   }
 
-  .btn {
+  .btn,
+.nav-btn {
     font-size: 1.25rem;
   }
 
@@ -15840,6 +15859,10 @@ footer {
   .hero-text,
 .card-text {
     font-size: 1.5rem;
+  }
+
+  .my-3 {
+    font-size: 2rem;
   }
 
   #about h2 {
