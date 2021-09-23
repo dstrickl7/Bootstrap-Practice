@@ -44,6 +44,12 @@ h6 {
   font-weight: 700;
 }
 
+.nav-item,
+.nav-link {
+  width: 100%;
+  text-align: center;
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;

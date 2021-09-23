@@ -9,10 +9,16 @@ close.addEventListener("click", () => {
 });
 
 // Attempt to close navlist when a link is clicked
-let navlink = document.querySelectorAll("nav-link");
+let navlink = document.querySelectorAll(".nav-link");
 
 navlink.forEach((link) =>
-  link.addEventListener("click", (x) => {
-    console.log(x.target);
+  link.addEventListener("click", () => {
+    close.click();
   })
 );
+
+overlay.addEventListener("click", () => {
+  if (overlay.classList.contains("active")) {
+    close.click();
+  }
+});
