@@ -286,6 +286,10 @@ footer {
     justify-content: space-between;
   }
 
+  .nav-list-container-md.active {
+    display: none;
+  }
+
   .nav-item {
     padding: 0 0.75rem;
   }
